@@ -31,6 +31,16 @@ h1:first-child {
 body {
   margin: 0;
   font-family: Ubuntu, Helvetica, sans-serif;
+
+  /* GRID TIME! */
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 50px 1fr 30px;
+  gap: 5px;
+}
+nav, footer {
+  grid-column: 1 / -1;
 }
 
 /* FLEX TIME! */
@@ -41,12 +51,31 @@ nav {
   background-color: #457e61;
   align-items: center;
 }
+
 nav > div {
   font-size: 20px;
   margin: 10px;
   color: #f3dba8;
 }
 
-nav > div:last-child {
+nav>div:last-child {
   margin-inline-start: auto;
+}
+
+/* color for distinguishing grid items */
+aside {
+  background-color: #a2b4da;
+}
+main {
+  background-color: #f3dba8;
+}
+
+footer {
+  background-color: #a2cbb6;
+}
+
+.flex-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
