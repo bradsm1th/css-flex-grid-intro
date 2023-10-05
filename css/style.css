@@ -1,16 +1,52 @@
-* {
+/* =======================
+/* (style I've been using on my own)
+/* =====================*/
+
+/* * {
   --main-font: "fira sans";
   font-family: var(--main-font), monospace;
   box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
   width: 70vw;
   margin: 0 auto;
-}
+} */
 
 h1:first-child {
   text-align: center;
   padding-block-end: .2em;
   border-block-end: .1em solid coral;
+}
+
+
+/* =======================
+/* lesson styles
+/* =====================*/
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  margin: 0;
+  font-family: Ubuntu, Helvetica, sans-serif;
+}
+
+/* FLEX TIME! */
+nav {
+  display: flex;
+  height: 50px;
+  /* the given color, a2cbb6, doesn't meet WCAG's suggested contrast ratio (with the given font color, at least)…so i picked one that did */
+  background-color: #457e61;
+  align-items: center;
+}
+nav > div {
+  font-size: 20px;
+  margin: 10px;
+  color: #f3dba8;
+}
+
+nav > div:last-child {
+  margin-inline-start: auto;
 }
